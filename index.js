@@ -3,7 +3,6 @@ var inquirer = require("inquirer");
 var path = require("path");
 var generateMarkdown = require("./utils/generateMarkdown")
 
-
 // array of questions for user
 const questions = [
     {
@@ -42,7 +41,8 @@ const questions = [
     {
         type: "input",
         message: "What command should be run to install dependencies?",
-        name: "userInstDepend"
+        name: "userInstDepend",
+        default: "npm install"
         
     },
     {
@@ -63,20 +63,17 @@ const questions = [
 
 ];
 
-
-    
-
-
 // function to write README file
 function writeToFile(fileName, data) {
-    return fs.writeToFile(path.join(process.cwd(),fileName),data)
+    return fs.writeFileSync(path.join(process.cwd(),fileName),data)
 };
 
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then((response) => {
+        console.log(response)
         console.log("writing to file");
-        writeToFile("exampleReadMe.md", generateMarkdown({...response}))
+        writeToFile("exampleReadMe.md", generateMarkdown(response))
     });
 
 };

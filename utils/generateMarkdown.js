@@ -1,42 +1,37 @@
 // function to generate markdown for README
 
 function renderLicenseBadge (userLicense) {
-
+  return`![GitHub license](https://img.shields.io/badge/License-${userLicense}-blue.svg)`
 }
 
-function renderLicenseLink (userLicense) {
-
-}
-
-function renderLicenseSection (userLicense) {
-  
-}
-
-
-
+// 
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `${renderLicenseBadge(data.userLicense)}
+  # ${data.projectTitle}
 
   ## Description
-    ${userProject}
+    ${data.userProject}
   ## Table of Contents
-    [License] 
-    [Contributing]
-    [Tests]
-    [Questions]
+* [License](#license)
+
+* [Contributing](#contributing)
+  
+* [Tests](#tests)
+  
+* [Questions](#questions)
 
   ## Installation
-      ${userInstDepend}
+    ${data.userInstDepend}
   ## Usage
-      ${userRepo}
+    ${data.userRepo}
   ## License
-    This project is licensed under the ${userLicense} license.
+    This project is licensed under the ${data.userLicense} license.
   ## Contributing 
-    ${userConRepo}
+    ${data.userConRepo}
   ## Tests
-    ${userRunTests}
+    ${data.userRunTests}
   ## Questions
-    Please contact ${userEmail} for any questions
+    Please contact ${data.userEmail} for any questions - link githu
     
 
 
