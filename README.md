@@ -25,14 +25,14 @@ I had many issues figuring out how to get the questions to appear on the readme 
 Ryan Witherspoon
 
 ## Image
-![image info](./assets/images/homework02_screengrab.png)
+![image info](./images/homework_09_screengrab.png)
 
 ## Links
-[link to GitHub!](https://github.com/ryanwit/homework02_responsiveness_portfolio)
+[link to GitHub!](https://github.com/ryanwit/homework_09_good_readme_generator)
 
-[link to Webpage!](https://ryanwit.github.io/homework02_responsiveness_portfolio/)
+[link to Webpage!](https://ryanwit.github.io/homework_09_good_readme_generator/)
 
-[link to Screencastify Demo!](https://ryanwit.github.io/homework02_responsiveness_portfolio/)
+[link to Screencastify Demo!](https://drive.google.com/file/d/1GWdQCsHHioojFlGW8V4ytOf8WF1rzAYs/preview)
 
 
 # License
