@@ -11,6 +11,7 @@ function generateMarkdown(data) {
 
   ## Description
     ${data.userProject}
+    
   ## Table of Contents
 * [License](#license)
 
@@ -31,7 +32,7 @@ function generateMarkdown(data) {
   ## Tests
     ${data.userRunTests}
   ## Questions
-    Please contact ${data.userEmail} for any questions - link githu
+    Please contact ${data.userEmail} for any questions - link github
     
 
 
